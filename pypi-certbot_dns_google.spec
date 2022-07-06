@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x447BF683AA3B26C3 (certbot-team@eff.org)
 #
 Name     : pypi-certbot_dns_google
-Version  : 1.28.0
-Release  : 5
-URL      : https://files.pythonhosted.org/packages/ea/be/bfc235c40ac61bfbb88d022c71750faaa12a2ea4666b80aadb3f80879ad3/certbot-dns-google-1.28.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ea/be/bfc235c40ac61bfbb88d022c71750faaa12a2ea4666b80aadb3f80879ad3/certbot-dns-google-1.28.0.tar.gz
-Source1  : https://files.pythonhosted.org/packages/ea/be/bfc235c40ac61bfbb88d022c71750faaa12a2ea4666b80aadb3f80879ad3/certbot-dns-google-1.28.0.tar.gz.asc
+Version  : 1.29.0
+Release  : 6
+URL      : https://files.pythonhosted.org/packages/e8/2c/2522d085432558676994441b007a84c0bb531e0805f10a5130fc1adb0cdd/certbot-dns-google-1.29.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e8/2c/2522d085432558676994441b007a84c0bb531e0805f10a5130fc1adb0cdd/certbot-dns-google-1.29.0.tar.gz
+Source1  : https://files.pythonhosted.org/packages/e8/2c/2522d085432558676994441b007a84c0bb531e0805f10a5130fc1adb0cdd/certbot-dns-google-1.29.0.tar.gz.asc
 Summary  : Google Cloud DNS Authenticator plugin for Certbot
 Group    : Development/Tools
 License  : Apache-2.0
@@ -61,10 +61,10 @@ python3 components for the pypi-certbot_dns_google package.
 
 
 %prep
-%setup -q -n certbot-dns-google-1.28.0
-cd %{_builddir}/certbot-dns-google-1.28.0
+%setup -q -n certbot-dns-google-1.29.0
+cd %{_builddir}/certbot-dns-google-1.29.0
 pushd ..
-cp -a certbot-dns-google-1.28.0 buildavx2
+cp -a certbot-dns-google-1.29.0 buildavx2
 popd
 
 %build
@@ -72,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656364118
+export SOURCE_DATE_EPOCH=1657150058
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -97,7 +97,7 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-certbot_dns_google
-cp %{_builddir}/certbot-dns-google-1.28.0/LICENSE.txt %{buildroot}/usr/share/package-licenses/pypi-certbot_dns_google/d095fa0d394cc9417a65aecd0d28e7d10e762f98
+cp %{_builddir}/certbot-dns-google-1.29.0/LICENSE.txt %{buildroot}/usr/share/package-licenses/pypi-certbot_dns_google/d095fa0d394cc9417a65aecd0d28e7d10e762f98
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
