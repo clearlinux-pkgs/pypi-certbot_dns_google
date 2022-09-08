@@ -1,5 +1,5 @@
 PKG_NAME := pypi-certbot_dns_google
-URL = https://files.pythonhosted.org/packages/e8/2c/2522d085432558676994441b007a84c0bb531e0805f10a5130fc1adb0cdd/certbot-dns-google-1.29.0.tar.gz
+URL = https://files.pythonhosted.org/packages/37/bd/5affa849f4a35fd628e7be6aad3f72d998191302ce88b230e090da50ee2f/certbot-dns-google-1.30.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
