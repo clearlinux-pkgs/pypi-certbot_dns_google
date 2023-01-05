@@ -6,7 +6,7 @@
 #
 Name     : pypi-certbot_dns_google
 Version  : 2.1.0
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/5e/92/df165b3171fd05ec19b2e526c62c2666baee80cf6f9b53c78579d55322a8/certbot-dns-google-2.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5e/92/df165b3171fd05ec19b2e526c62c2666baee80cf6f9b53c78579d55322a8/certbot-dns-google-2.1.0.tar.gz
 Source1  : https://files.pythonhosted.org/packages/5e/92/df165b3171fd05ec19b2e526c62c2666baee80cf6f9b53c78579d55322a8/certbot-dns-google-2.1.0.tar.gz.asc
