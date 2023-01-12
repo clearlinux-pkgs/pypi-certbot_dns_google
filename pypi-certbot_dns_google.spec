@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x780CC99432A28621 (certbot-team@eff.org)
 #
 Name     : pypi-certbot_dns_google
-Version  : 2.1.0
-Release  : 20
-URL      : https://files.pythonhosted.org/packages/5e/92/df165b3171fd05ec19b2e526c62c2666baee80cf6f9b53c78579d55322a8/certbot-dns-google-2.1.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/5e/92/df165b3171fd05ec19b2e526c62c2666baee80cf6f9b53c78579d55322a8/certbot-dns-google-2.1.0.tar.gz
-Source1  : https://files.pythonhosted.org/packages/5e/92/df165b3171fd05ec19b2e526c62c2666baee80cf6f9b53c78579d55322a8/certbot-dns-google-2.1.0.tar.gz.asc
+Version  : 2.2.0
+Release  : 21
+URL      : https://files.pythonhosted.org/packages/97/71/42b7648fa85a2d3cd16216a258536502221c0dff8a966121ab4961d7b2ec/certbot-dns-google-2.2.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/97/71/42b7648fa85a2d3cd16216a258536502221c0dff8a966121ab4961d7b2ec/certbot-dns-google-2.2.0.tar.gz
+Source1  : https://files.pythonhosted.org/packages/97/71/42b7648fa85a2d3cd16216a258536502221c0dff8a966121ab4961d7b2ec/certbot-dns-google-2.2.0.tar.gz.asc
 Summary  : Google Cloud DNS Authenticator plugin for Certbot
 Group    : Development/Tools
 License  : Apache-2.0
@@ -64,10 +64,10 @@ python3 components for the pypi-certbot_dns_google package.
 
 
 %prep
-%setup -q -n certbot-dns-google-2.1.0
-cd %{_builddir}/certbot-dns-google-2.1.0
+%setup -q -n certbot-dns-google-2.2.0
+cd %{_builddir}/certbot-dns-google-2.2.0
 pushd ..
-cp -a certbot-dns-google-2.1.0 buildavx2
+cp -a certbot-dns-google-2.2.0 buildavx2
 popd
 
 %build
@@ -75,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1672760362
+export SOURCE_DATE_EPOCH=1673537510
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
