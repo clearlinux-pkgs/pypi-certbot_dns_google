@@ -6,10 +6,10 @@
 # autospec commit: 250a666
 #
 Name     : pypi-certbot_dns_google
-Version  : 2.7.3
-Release  : 30
-URL      : https://files.pythonhosted.org/packages/61/be/a883a026e98d8232991cbff8a880d12106243651f9d0d1fba9b051bd62ec/certbot-dns-google-2.7.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/61/be/a883a026e98d8232991cbff8a880d12106243651f9d0d1fba9b051bd62ec/certbot-dns-google-2.7.3.tar.gz
+Version  : 2.7.4
+Release  : 31
+URL      : https://files.pythonhosted.org/packages/89/61/1a2d2c74c76147ccfdc1c90a4b23340f8db291514d657a809d44bff03078/certbot-dns-google-2.7.4.tar.gz
+Source0  : https://files.pythonhosted.org/packages/89/61/1a2d2c74c76147ccfdc1c90a4b23340f8db291514d657a809d44bff03078/certbot-dns-google-2.7.4.tar.gz
 Summary  : Google Cloud DNS Authenticator plugin for Certbot
 Group    : Development/Tools
 License  : Apache-2.0
@@ -62,10 +62,10 @@ python3 components for the pypi-certbot_dns_google package.
 
 
 %prep
-%setup -q -n certbot-dns-google-2.7.3
-cd %{_builddir}/certbot-dns-google-2.7.3
+%setup -q -n certbot-dns-google-2.7.4
+cd %{_builddir}/certbot-dns-google-2.7.4
 pushd ..
-cp -a certbot-dns-google-2.7.3 buildavx2
+cp -a certbot-dns-google-2.7.4 buildavx2
 popd
 
 %build
@@ -73,7 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1698259546
+export SOURCE_DATE_EPOCH=1698880103
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
