@@ -7,7 +7,7 @@
 #
 Name     : pypi-certbot_dns_google
 Version  : 2.8.0
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/64/58/27d62e7e0e805367cba2a10a7530727bde36d46390800b0814f832a52fd2/certbot-dns-google-2.8.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/64/58/27d62e7e0e805367cba2a10a7530727bde36d46390800b0814f832a52fd2/certbot-dns-google-2.8.0.tar.gz
 Summary  : Google Cloud DNS Authenticator plugin for Certbot
@@ -50,6 +50,7 @@ python components for the pypi-certbot_dns_google package.
 Summary: python3 components for the pypi-certbot_dns_google package.
 Group: Default
 Requires: python3-core
+Provides: pypi(certbot_dns_google)
 Requires: pypi(acme)
 Requires: pypi(certbot)
 Requires: pypi(google_api_python_client)
